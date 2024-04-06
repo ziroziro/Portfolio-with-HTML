@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Complete Responsive Personal Portofolio Website Using HTML CSS Javascript</title>
+        <title>Ziro</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     
         <!---box icons link-->
@@ -17,37 +17,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
     </head>
     <body>
         <!---header-->
         <header>
-            <a href="#" class="logo">Developer <span>X.</span></a>
+            <a href="#" class="logo">About <span>Ziro</span></a>
 
             <div class="bx bx-menu" id="menu-icon"></div>
 
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="top-btnn">
-                <a href="#" class="h-btn">Contact me</a>
+                <a href="#contact" class="h-btn">Contact me</a>
             </div>
         </header>
 
         <!---hero-->
         <section class="hero" id="home">
-            <div class="main-content">
+            <div class="main-content" data-aos="fade-in">
                 <h4>Hi, There!</h4>
                 <h1>I'm <span>Ziro</span></h1>
                 <p>Lorem Ipsum Dolor Dolor</p>
                 <div class="social">
-                    <a href="#"><i class="ri-instagram-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="https://www.instagram.com/dziro.rf"><i class="ri-instagram-fill"></i></a>
+                    <a href="https://twitter.com/ziroxziro"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="https://www.youtube.com/channel/UCeZoRlt2w_KQ1qMxqAVkz2g"><i class="ri-youtube-fill"></i></a>
                     <a href="#"><i class="ri-telegram-fill"></i></a>
                 </div>
                 <div class="main-btn">
@@ -59,11 +61,11 @@
 
         <!---about-->
         <section class="about" id="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="zoom-in-down">
                 <img src="img/about.png">
             </div>
 
-            <div class="about-text">
+            <div class="about-text" data-aos="zoom-in-up">
                 <h2>I am Flutter <span>Developer</span> <br> & UI/UX <span>Designer</span></h2>
                 <div class="exp-area">
                     <p class="exp">
@@ -88,26 +90,214 @@
             <a href="#" class="btn">View All Projects</a>
         </section>
 
-        <!---Services-->
-        <section class="services" id="services">
-            <div class="center-text">
-                <h2>My <span>Services</span></h2>
+        <!---Experience-->
+        <section class="experience" id="experience">
+            <div class="center-text" data-aos="fade-down">
+                <h2>My <span>Experience</span></h2>
             </div>
 
-            <div class="services-content">
+            <div class="experience-content" data-aos="zoom-in-up">
                 <div class="box">
                     <img src="img/s-1.svg">
-                    <h3>UI/UX Design</h3>
-                    <p>Fringilla dapibus platean interdum justoutan</p>
-                    <a href="#">
-                        Download Now
-                        <i class="ri-arrow-right-line"></i>
-                    </a>
+                    <h3>UI/UX Designer</h3>
+                    <p>3 years of experience as a UI/UX designer with a few tries on unique designs that are currently popular and frequently used design models, studied IOS design and Material design to become an intermediate level in UI/UX. Proficient in creating several philosophical illustration components and also exploring Android or iOS responsiveness</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s-2.svg">
+                    <h3>Flutter Developer</h3>
+                    <p>has been a flutter developer for 4 years, has entered the intermediate stage in the flutter and dart languages. implementing applications on IOS, Android, and Web. While using Flutter to get the API using Odoomodel and GetIt but still exploring others. Proficient in flutter app responsiveness</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s-3.svg">
+                    <h3>won 2nd place at Dinacom application competition</h3>
+                    <p>won second place in the dinacom application competition at 2020 with a team consisting of two other members. in this competition I made an application to help the inland Baduy tribe, this application is quite relevant to the competition theme, namely solving socioeconomic and cultural problems in Indonesia</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s-2.svg">
+                    <h3>Android developer internship at Honda</h3>
+                    <p>internship from March 2021 to December 2021. I did field work practice for 6 months and was an intern for 4 months at the company PT. Tunas Dwipa Matra Honda Lampung IT division. my experience working at TDM Pramuka for 10 months, I helped the IT team there to create HondaKu (HoKu) using flutter and dart language</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s-2.svg">
+                    <h3>IoT trainer on ID-Networkers</h3>
+                    <p>ID-Networkers and IDN Boarding school have held IoT training events. I am an IoT trainer where I teach IoT knowledge to the training participants</p>
+                </div>
+
+                <div class="box">
+                    <img src="img/s-2.svg">
+                    <h3>Dicoding Student</h3>
+                    <p>in the coding training I have completed several exercises and received certificates such as Learning to Make Android Applications for Beginners, Learning Android Application Fundamentals, Learning Basic Structured Query Language (SQL), Learning Basic Git with GitHub, Starting Programming with Dart, Learning to Make Flutter Applications for Beginners</p>
                 </div>
             </div>
         </section>
 
+        <!---Portfolio-->
+        <section class="portfolio" id="portfolio">
+            <div class="center-text" data-aos="fade-down">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+
+            <div class="portfolio-content" data-aos="zoom-in-up">
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Flutter Apps</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Lampung Smart Service</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Android Apps</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Hondaku (HOKU)</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Flutter Apps</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>ZRDb (Movie App)</h4>
+                </div> 
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Android Apps</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Baduduy</h4>
+                </div>  
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Application Design</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>APE APPS</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Himatro Website</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Website Design</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Website Of Presidency</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Application Design</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Ashten</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/port-6.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Application Design</h5>
+                        </div>
+                        <!-- <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div> -->
+                    </div>
+                    <h4>Pharmasy</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!---contact-->
+        <section class="contact" id="contact">
+            <div class="center-text" data-aos="fade-down">
+                <h2>Contact <span>Me</span></h2>
+            </div>
+
+            <div class="contact-form" data-aos="zoom-in">
+                <form action="">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Email Address.." required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                    <input type="submit" name="" value="Send" class="send-btn">
+                </form>
+            </div>
+        </section>
+
+        <!---footer-->
+        <div class="footer">
+            <div class="copyright">
+                <p>2024 Ziro, All Rights Reserved.</p>
+            </div>
+
+            <a href="#home" class="scroll-top">
+                <i class="ri-arrow-up-s-fill"></i>
+            </a>
+        </div>
+
         <!---js link-->
         <script src="js/script.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+        </script>
     </body>
 </html>
